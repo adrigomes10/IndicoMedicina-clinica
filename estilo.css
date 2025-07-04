@@ -129,7 +129,10 @@
   }
   
   form button:hover {
-    background-color: #0E2A4A;
+    background-color: #08406c; /* azul mais escuro */
+    box-shadow: 0 0 10px rgba(8, 64, 108, 0.7);
+    transform: translateY(-2px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   }
   
   #contato p {
@@ -159,7 +162,6 @@
   
     .texto-header p {
       font-size: 16px;
-      background: transparent;
     }
   
     nav a {
