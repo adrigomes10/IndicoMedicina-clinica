@@ -60,11 +60,13 @@
   }
   
   #banner img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 300px; /* ou ajuste conforme desejar */
+    object-fit: cover;
     display: block;
     animation: fadeIn 1s ease;
   }
+  
   
   main {
     padding: 40px 20px;
@@ -109,7 +111,7 @@
     max-width: 500px;
   }
   
-  form input,
+  form input, 
   form select,
   form textarea,
   form button {
@@ -163,7 +165,7 @@
     .texto-header p {
       font-size: 16px;
     }
-  
+    
     nav a {
       display: block;
       margin: 10px 0;
@@ -209,3 +211,29 @@
       opacity: 1;
     }
   }
+
+  #agendamento {
+    background-color: #eef3f8;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  .whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: background-color 0.3s;
+  }
+  
+  .whatsapp-fixo:hover {
+    background-color: #1da851;
+  }
+
