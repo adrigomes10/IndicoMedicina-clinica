@@ -2,13 +2,6 @@
 console.log("Bem-vindo à Clínica Endoscop!");
 
 
-const botaoWhatsapp = document.getElementById("botao-whatsapp");
-if (botaoWhatsapp) {
-    botaoWhatsapp.addEventListener("click", function () {
-        alert("Você será redirecionado para o WhatsApp. Aguarde...");
-    });
-}
-
 
 const formulario = document.getElementById("form-agendamento");
 if (formulario) {
