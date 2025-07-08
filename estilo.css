@@ -1,239 +1,297 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #0E2A4A;
+  color: white;
+  padding: 6px 3px;
+  animation: fadeInDown 1s ease-in-out;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+.texto-header h1 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.texto-header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+nav {
+  background-color: #0E2A4A;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+#banner img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+  display: block;
+  animation: fadeIn 1s ease;
+}
+
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 50px;
+  animation: fadeInUp 1s ease;
+}
+
+h2 {
+  color: #0E2A4A;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.grid div {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #0E2A4A;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #08406c;
+  /* azul mais escuro */
+  box-shadow: 0 0 10px rgba(8, 64, 108, 0.7);
+  transform: translateY(-2px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#contato p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #0E2A4A;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  animation: fadeIn 1s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    background-color: #0E2A4A;
-    color: white;
-    padding: 30px 20px;
-    animation: fadeInDown 1s ease-in-out;
-    flex-wrap: wrap;
-  }
-  
-  header img {
-    width: 150px;
-    height: auto;
-  }
-  
-  .texto-header h1 {
-    font-size: 40px;
-    margin: 0 0 10px 0;
-  }
-  
-  .texto-header p {
-    font-size: 18px;
-    margin: 0;
-  }
-  
-  nav {
-    background-color: #0E2A4A;
-    padding: 10px;
+    flex-direction: column;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
   }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ffd700;
-  }
-  
-  #banner img {
-    width: 100%;
-    height: 325px;
-    object-fit: cover;
-    display: block;
-    animation: fadeIn 1s ease;
-  }
-  
-  
-  main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  section {
-    margin-bottom: 50px;
-    animation: fadeInUp 1s ease;
-  }
-  
-  h2 {
-    color: #0E2A4A;
-    margin-bottom: 15px;
+
+  .texto-header h1 {
     font-size: 28px;
   }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-  
-  .grid div {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .grid div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-  }
-  
-  form input, 
-  form select,
-  form textarea,
-  form button {
-    padding: 12px;
+
+  .texto-header p {
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
-  
-  form button {
-    background-color: #0E2A4A;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+
+  nav a {
+    display: block;
+    margin: 10px 0;
   }
-  
-  form button:hover {
-    background-color: #08406c; /* azul mais escuro */
-    box-shadow: 0 0 10px rgba(8, 64, 108, 0.7);
-    transform: translateY(-2px);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  .grid {
+    grid-template-columns: 1fr;
   }
-  
-  #contato p {
-    font-size: 15px;
-    margin-bottom: 8px;
-  }
-  
-  footer {
-    background-color: #0E2A4A;
-    color: white;
-    text-align: center;
+
+  main {
     padding: 20px;
-    font-size: 14px;
-    animation: fadeIn 1s ease;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .texto-header h1 {
-      font-size: 28px;
-    }
-  
-    .texto-header p {
-      font-size: 16px;
-    }
-    
-    nav a {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    main {
-      padding: 20px;
-    }
-  }
-  
-  /* Animações */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
-  #agendamento {
-    background-color: #eef3f8;
-    padding: 40px 20px;
-    border-radius: 10px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
   }
 
-  .whatsapp-fixo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    transition: background-color 0.3s;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .whatsapp-fixo:hover {
-    background-color: #1da851;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
+  to {
+    opacity: 1;
+  }
+}
+
+#agendamento {
+  background-color: #eef3f8;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: background-color 0.3s;
+}
+
+
+
+.whatsapp-fixo:hover {
+  background-color: #1da851;
+}
+
+.whatsapp-message {
+  position: fixed;
+  bottom: 80px;
+  /* fica logo acima do botão */
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: fadeIn 1s ease forwards;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Esconde a mensagem após o tempo */
+.whatsapp-message.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background: #0E2A4A;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  display: none;
+  z-index: 999;
+}
