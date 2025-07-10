@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
+
 <body>
 
     <header>
@@ -210,6 +211,91 @@
             </div>
         </section>
 
+        <section id="artigos">
+            <h2>Dicas de Saúde</h2>
+          
+            <!-- Filtro -->
+            <div id="filtro-artigos">
+              <button data-filter="todos" class="ativo">Todos</button>
+              <button data-filter="alergologia">Alergologia</button>
+              <button data-filter="cardiologia">Cardiologia</button>
+              <button data-filter="clinico-geral">Clínico Geral</button>
+              <button data-filter="colonoscopia">Colonoscopia</button>
+              <button data-filter="dermatologia">Dermatologia</button>
+              <button data-filter="endoscopia">Endoscopia</button>
+              <button data-filter="geriatria">Geriatria</button>
+              <button data-filter="ginecologia">Ginecologia</button>
+              <button data-filter="reumatologia">Reumatologia</button>
+            </div>
+          
+            <!-- Grid de artigos -->
+            <div class="grid">
+          
+              <article data-category="alergologia">
+                <h3>Como identificar alergias comuns</h3>
+                <p>Espirros frequentes, coceira na pele ou olhos lacrimejando podem ser sinais de alergias respiratórias ou alimentares.</p>
+                <a href="artigos/como-identificar-alergias.html">Leia mais</a>
+              </article>
+          
+              <article data-category="cardiologia">
+                <h3>Cuidados diários com o coração</h3>
+                <p>Pequenas mudanças como reduzir o sal e praticar exercícios podem proteger sua saúde cardiovascular.</p>
+                <a href="artigos/cuidados-diarios-coracao.html">Leia mais</a>
+              </article>
+          
+              <article data-category="clinico-geral">
+                <h3>Quando procurar um clínico geral?</h3>
+                <p>Dores persistentes, cansaço excessivo e outros sinais podem indicar a hora de agendar uma consulta.</p>
+                <a href="artigos/quando-procurar-clinico-geral.html">Leia mais</a>
+              </article>
+          
+              <article data-category="colonoscopia">
+                <h3>Colonoscopia: quando fazer o exame?</h3>
+                <p>Indicado a partir dos 50 anos ou em casos de sintomas como sangue nas fezes, a colonoscopia pode salvar vidas.</p>
+                <a href="artigos/colonoscopia-quando-fazer.html">Leia mais</a>
+              </article>
+          
+              <article data-category="dermatologia">
+                <h3>Dicas para cuidar da pele no inverno</h3>
+                <p>O frio pode ressecar a pele. Veja como manter a hidratação e prevenir problemas dermatológicos.</p>
+                <a href="artigos/dicas-para-cuidar-da-pele.html">Leia mais</a>
+              </article>
+          
+              <article data-category="endoscopia">
+                <h3>Endoscopia: o que esperar do exame</h3>
+                <p>Entenda como é feito o procedimento, quanto tempo dura e quais cuidados são necessários.</p>
+                <a href="artigos/endoscopia-o-que-esperar.html">Leia mais</a>
+              </article>
+          
+              <article data-category="gastroenterologia">
+                <h3>Saúde digestiva: sinais que indicam alerta</h3>
+                <p>Refluxo, azia ou distensão abdominal podem indicar problemas no trato gastrointestinal.</p>
+                <a href="artigos/saude-digestiva.html">Leia mais</a>
+              </article>
+          
+              <article data-category="geriatria">
+                <h3>Cuidados essenciais na terceira idade</h3>
+                <p>Atividades cognitivas, boa alimentação e acompanhamento médico são fundamentais na geriatria.</p>
+                <a href="artigos/cuidados-terceira-idade.html">Leia mais</a>
+              </article>
+          
+              <article data-category="ginecologia">
+                <h3>Importância do acompanhamento ginecológico</h3>
+                <p>Consultas regulares ajudam a prevenir e tratar doenças como miomas, endometriose e câncer de colo de útero.</p>
+                <a href="artigos/acompanhamento-ginecologico.html">Leia mais</a>
+              </article>
+          
+              <article data-category="reumatologia">
+                <h3>Como aliviar dores articulares</h3>
+                <p>Práticas como alongamento e fisioterapia auxiliam no tratamento da artrose e outras doenças reumatológicas.</p>
+                <a href="artigos/aliviar-dores-articulares.html">Leia mais</a>
+              </article>
+          
+            </div>
+          </section>
+          
+
+
 
         <section id="agendamento">
             <h2>Agende sua Consulta</h2>
@@ -253,7 +339,7 @@
 
         <section id="contato">
             <h2>Contato</h2>
-            <p><strong>Endereço:</strong> Av. Índico, 155 - Jardim do Mar - São Bernardo - SP  </p>
+            <p><strong>Endereço:</strong> Av. Índico, 155 - Jardim do Mar - São Bernardo - SP </p>
             <p><strong>Telefone:</strong> <a href="tel:+551141250126">(11) 4125-0126</a> </p>
             <p><strong>Telefone:</strong> <a href="tel:+551141254492">(11) 4125-4492</a> </p>
             <p><strong>Telefone:</strong> <a href="tel:+551141237454">(11) 4123-7454</a> </p>
@@ -271,7 +357,7 @@
 
 
     <a href="#" id="btnTopo">↑</a>
-        
+
 
     <iframe src="https://www.google.com/maps?q=Av.+Índico,+155,+São+Bernardo+-+SP&output=embed" width="100%"
         height="300" style="border:0;" allowfullscreen="" loading="lazy">
@@ -283,8 +369,10 @@
 
 
 
+    <script src="script.js"></script>
+
 </body>
 
-<script src="./script.js"></script>
+   
 
-</html>
+</html> 
