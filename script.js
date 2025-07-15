@@ -62,3 +62,14 @@ botoesFiltro.forEach(botao => {
     });
   });
 });
+
+
+  function scrollConvenios(direction) {
+    const container = document.getElementById('conveniosScroll');
+    const scrollAmount = 250; // pode ajustar o valor aqui
+
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
