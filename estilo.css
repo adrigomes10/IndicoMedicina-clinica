@@ -80,10 +80,9 @@ main {
 }
 
 #servicos {
-  padding: 40px 20px;
-  background-color: #f9fafb;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px 0;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease forwards;
 }
 
 #servicos h2 {
@@ -91,61 +90,71 @@ main {
   font-size: 32px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: 700;
+  animation: slideInDown 1s ease forwards;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+#servicos ol {
+  list-style-position: inside;
+  counter-reset: item;
+  padding: 0;
 }
 
-.grid div {
-  background: white;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px #073990;
+#servicos li {
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  animation: fadeItem 0.8s ease forwards;
+  opacity: 0;
 }
 
-.grid div:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px #073990;
+#servicos li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-.grid h3 {
+
+#servicos li strong {
   color: #073990;
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 22px;
 }
 
-.grid p {
-  flex-grow: 1;
-  color: #444;
-  line-height: 1.5;
-  margin-bottom: 20px;
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Botão Saiba Mais */
-.grid div button {
-  align-self: flex-start;
-  background-color: #073990;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 18px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.grid div button:hover {
-  background-color: #073990;
+@keyframes fadeItem {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+
 
 
 form {
