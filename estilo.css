@@ -326,13 +326,56 @@ footer {
 }
 
 #agendamento {
-  background-color: #eef3f8;
+  background-color: #f3f7fa;
   padding: 40px 20px;
   border-radius: 10px;
 }
 
 #agendamento h2 {
   color: #073990;
+}
+
+ #agendamento form {
+  display: flex;
+
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#agendamento form div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#agendamento form i {
+  color: #073990;
+  min-width: 20px;
+}
+
+#agendamento form input,
+#agendamento form select,
+#agendamento form textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#agendamento form button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#agendamento form button:hover {
+  background-color: #073990;
 }
 
 

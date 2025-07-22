@@ -21,6 +21,25 @@ if (formulario) {
   });
 }
 
+//funcao que envia o formulário de agendamento via WhatsApp
+  function enviarParaWhatsapp() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const servico = document.getElementById('servico').value;
+    const observacoes = document.getElementById('observacoes').value;
+
+    const mensagem = `Olá! Meu nome é ${nome}.
+Gostaria de agendar uma consulta para: ${servico}.
+Telefone: ${telefone}
+E-mail: ${email}
+Observações: ${observacoes}`;
+
+    const url = `https://wa.me/5511932614762?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  }
+
+  
 // Mostrar botão 'Voltar ao topo' ao rolar a página
 window.onscroll = () => {
   const btn = document.getElementById("btnTopo");

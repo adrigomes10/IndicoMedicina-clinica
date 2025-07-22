@@ -191,7 +191,7 @@
                     circulatório.
                 </li>
                 <li><strong>Clínico Geral:</strong> Diagnósticos, check-ups e acompanhamento geral.</li>
-                
+
                 <li><strong>Colonoscopia:</strong> Exame endoscópico do intestino grosso, essencial para a prevenção
                     e
                     diagnóstico de doenças como pólipos, inflamações e câncer colorretal.</li>
@@ -226,14 +226,14 @@
                 <li><strong>Prova de Função Pulmonar:</strong> Exame que avalia a capacidade respiratória dos
                     pulmões,
                     essencial para o diagnóstico de doenças como asma, DPOC e outras condições pulmonares.</li>
-                
+
                 <li><strong>Reumatologia:</strong> Diagnóstico e tratamento de doenças articulares, musculares e
                     autoimunes, como artrite, artrose, lúpus e fibromialgia.</li>
                 <li><strong>Traumatologia:</strong> Atendimento e tratamento de lesões causadas por traumas, como
                     fraturas, entorses, luxações e lesões musculares.</li>
                 <li><strong>Urologia:</strong> Diagnóstico e tratamento de doenças do trato urinário e do sistema
                     reprodutor masculino, como infecções urinárias, cálculos renais e disfunções sexuais.</li>
-                
+
                 <li><strong>Vascular:</strong> Diagnóstico e tratamento de doenças das veias e artérias, como
                     varizes,
                     trombose, aneurismas e má circulação.</li>
@@ -388,45 +388,67 @@
 
 
         <section id="agendamento">
-            <h2>Agende sua Consulta</h2>
-            <br>
-            <form id="form-agendamento">
-                <input type="text" placeholder="Nome completo" required />
-                <input type="email" placeholder="E-mail" required />
-                <input type="tel" placeholder="Telefone" required />
-                <select required>
-                    <option value="">Selecione o serviço</option>
-                    <option>Alergologia</option>
-                    <option>Cardiologia</option>
-                    <option>Clínico Geral</option>
-                    <option>Cirurgia Plástica</option>
-                    <option>Colonoscopia</option>
-                    <option>Dermatologia</option>
-                    <option>Endocrinologia</option>
-                    <option>Endoscopia</option>
-                    <option>Infectologia</option>
-                    <option>Gastroenterologia</option>
-                    <option>Geriatria</option>
-                    <option>Ginecologia Obstetrícia</option>
-                    <option>Neurologia</option>
-                    <option>Ortopedia</option>
-                    <option>Otorrinolaringologia</option>
-                    <option>Pediatria</option>
-                    <option>Pneumologia</option>
-                    <option>Proctologia</option>
-                    <option>Prova de Função Pulmonar</option>
-                    <option>Psiquiatria</option>
-                    <option>Reumatologia</option>
-                    <option>Traumatologia</option>
-                    <option>Urologia</option>
-                    <option>Urologia Infantil</option>
-                    <option>Vascular</option>
-                    <option>Exames</option>
-                </select>
-                <textarea placeholder="Observações (opcional)"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+  <h2>Agende sua Consulta</h2>
+  <br>
+  <form id="form-agendamento" onsubmit="enviarParaWhatsapp(); return false;">
+
+    <div class="input-icon">
+      <i class="fas fa-user"></i>
+      <input type="text" id="nome" placeholder="Nome completo" required />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="email" placeholder="E-mail" required />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-phone"></i>
+      <input type="tel" id="telefone" placeholder="Telefone" required />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-stethoscope"></i>
+      <select id="servico" required>
+        <option value="">Selecione o serviço</option>
+        <option>Alergologia</option>
+        <option>Cardiologia</option>
+        <option>Clínico Geral</option>
+        <option>Cirurgia Plástica</option>
+        <option>Colonoscopia</option>
+        <option>Dermatologia</option>
+        <option>Endocrinologia</option>
+        <option>Endoscopia</option>
+        <option>Infectologia</option>
+        <option>Gastroenterologia</option>
+        <option>Geriatria</option>
+        <option>Ginecologia Obstetrícia</option>
+        <option>Neurologia</option>
+        <option>Ortopedia</option>
+        <option>Otorrinolaringologia</option>
+        <option>Pediatria</option>
+        <option>Pneumologia</option>
+        <option>Proctologia</option>
+        <option>Prova de Função Pulmonar</option>
+        <option>Psiquiatria</option>
+        <option>Reumatologia</option>
+        <option>Traumatologia</option>
+        <option>Urologia</option>
+        <option>Urologia Infantil</option>
+        <option>Vascular</option>
+        <option>Exames</option>
+      </select>
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-comment-dots"></i>
+      <textarea id="observacoes" placeholder="Observações (opcional)"></textarea>
+    </div>
+
+    <button type="submit"><i class="fab fa-whatsapp"></i> Enviar</button>
+  </form>
+</section>
+
 
         <br>
 
@@ -438,7 +460,8 @@
             <p><strong>Telefone:</strong> <a href="tel:+551141254492">(11) 4125-4492</a> </p>
             <p><strong>Telefone:</strong> <a href="tel:+551141237454">(11) 4123-7454</a> </p>
             <p><strong>Telefone:</strong> <a href="tel:+551141211008">(11) 4121-1008</a> </p>
-            <p><strong>Whatsapp:</strong> <a href=" https://wa.me/5511932614762" target="_blank">(11) 93261-4762</a> </p>
+            <p><strong>Whatsapp:</strong> <a href=" https://wa.me/5511932614762" target="_blank">(11) 93261-4762</a>
+            </p>
             <p><strong>E-mail:</strong> <a href="mailto:indicomedicina@gmail.com">indicomedicina@gmail.com</a> </p>
         </section>
 
@@ -489,6 +512,8 @@
 
 
     <script src="script.js"></script>
+
+    
 
 </body>git pull origin main
 
