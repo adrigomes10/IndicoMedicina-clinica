@@ -640,6 +640,12 @@ footer {
   border-radius: 8px;
 }
 
+.dica h2 {
+  color: #073990;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
 .botao-leia {
   display: inline-block;
   margin-top: 10px;
@@ -653,27 +659,50 @@ footer {
 
 /* Estilo para página de artigo individual */
 .artigo {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   font-family: 'Inter', sans-serif;
   line-height: 1.7;
-  color: #333;
+  color: #444;
 }
 
 .artigo h1 {
+  color: #073990;
+  margin-bottom: 16px;
+  font-weight: 600;
   font-size: 28px;
-  margin-bottom: 20px;
-  color: #145374;
   text-align: center;
 }
 
-.artigo p {
+.artigo h2 {
+  color: #073990;
   margin-bottom: 20px;
-  font-size: 17px;
+  font-weight: 600;
 }
+
+.artigo p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #444;
+}
+
+.artigo ul {
+  margin-left: 20px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  list-style-type: disc;
+  color: #101010;
+}
+
+.artigo li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
 
 /* Botão de voltar */
 .botao-voltar {
@@ -700,17 +729,36 @@ footer {
 }
 
 /* Trabalhe Conosco */
-.botao-leia {
-  display: inline-block;
-  background-color: #073990;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+#trabalhe-conosco {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
 }
 
-.botao-leia:hover {
-  background-color: #145374;
+#trabalhe-conosco h2,
+#trabalhe-conosco h3 {
+  color: #073990;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+#trabalhe-conosco p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #444;
+}
+
+#trabalhe-conosco ul {
+  margin-left: 20px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  list-style-type: disc;
+  color: #101010;
+}
+
+#trabalhe-conosco li {
+  margin-bottom: 10px;
+  font-size: 15px;
 }
