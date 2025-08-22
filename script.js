@@ -93,5 +93,11 @@ botoesFiltro.forEach(botao => {
     });
   }
 
+  // Função para alternar o menu no celular
+  function toggleMenu() {
+  const nav = document.getElementById("menu");
+  nav.classList.toggle("show");
+}
+
 
   
