@@ -26,11 +26,11 @@ if (formulario) {
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const telefone = document.getElementById('telefone').value;
-    const servico = document.getElementById('servico').value;
+    const especialidade = document.getElementById('especialidades').value;
     const observacoes = document.getElementById('observacoes').value;
 
     const mensagem = `Olá! Meu nome é ${nome}.
-Gostaria de agendar uma consulta para: ${servico}.
+Gostaria de agendar uma consulta para: ${especialidade}.
 Telefone: ${telefone}
 E-mail: ${email}
 Observações: ${observacoes}`;
