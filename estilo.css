@@ -822,3 +822,49 @@ footer {
  color: #073990;
  font-size: 1.9rem;
 }
+
+.dicas-frio h3 {
+ color: #073990;
+ font-size: 1.7rem;
+ margin-top: 15px;
+}
+
+.dicas-frio h4 {
+ color: #073990;
+ font-size: 1.7rem;
+ margin-top: 15px;
+}
+
+.dicas-frio p {
+ color: #000000;
+ font-size: 1.0rem;
+ margin-bottom: 10px;
+ line-height: 1.6;
+}
+
+.dicas-frio ul {
+  margin-left: 20px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  list-style-type: disc;
+  color: #000000;
+}
+
+.dicas-frio li {
+  margin-bottom: 10px;
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+
+.alerta h3 {
+ color: #d02520;
+ font-size: 1.7rem;
+ margin-top: 15px;
+}
+
+.alerta p {
+ color: #000000;
+ font-size: 1.1rem;
+ margin-bottom: 10px;
+ line-height: 1.6;
+}
