@@ -868,3 +868,15 @@ footer {
  margin-bottom: 10px;
  line-height: 1.6;
 }
+
+/* Altera a cor dos links dentro do footer */
+footer a {
+    color: #fff; /* branco */
+    text-decoration: none; /* opcional: remove sublinhado */
+}
+
+/* Se quiser efeito de hover */
+footer a:hover {
+    color: #ffd700; /* dourado, por exemplo */
+    text-decoration: underline; /* opcional: adiciona sublinhado ao passar o mouse */
+}
