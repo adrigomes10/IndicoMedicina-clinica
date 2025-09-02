@@ -380,7 +380,7 @@ footer {
 }
 
 #agendamento {
-  background-color: #f3f7fa;
+  background-color: none;
   padding: 40px 20px;
   border-radius: 10px;
 }
@@ -420,7 +420,7 @@ footer {
 
 #agendamento form button {
   padding: 12px;
-  background-color: #007BFF;
+  background-color: #073990;
   color: white;
   border: none;
   border-radius: 5px;
@@ -879,4 +879,78 @@ footer a {
 footer a:hover {
     color: #ffd700; /* dourado, por exemplo */
     text-decoration: underline; /* opcional: adiciona sublinhado ao passar o mouse */
+}
+
+
+/* Adicione para personalizar a ouvidoria */
+#ouvidoria {
+    background: #f8f9fa;
+    padding: 32px 16px;
+    border-radius: 12px;
+    margin: 32px auto;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#ouvidoria h2 {
+    color: #073990;
+    margin-bottom: 16px;
+}
+
+#ouvidoria .form .input-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#ouvidoria .input-icon i {
+    margin-right: 8px;
+    color: #073990;
+}
+
+#ouvidoria input,
+#ouvidoria select,
+#ouvidoria textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#ouvidoria button.botao-leia {
+    background: #007b8f;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#ouvidoria button.botao-leia:hover {
+    background: #005f6b;
+}
+
+.redes-sociais a {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    margin-right: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.redes-sociais a:hover {
+    color: #ffd700;
+}
+.redes-sociais i {
+    margin-right: 8px;
+}
+
+#contato h4 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: 1.8px;
 }

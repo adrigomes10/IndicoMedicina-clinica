@@ -43,6 +43,7 @@
         <a href="#horarios"><i class="fas fa-clock"></i> Horários</a>
         <a href="dicas.html"><i class="fas fa-heartbeat"></i> Dicas de Saúde</a>
         <a href="trabalhe-conosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
+        <a href="#ouvidoria"><i class="fas fa-comments"></i> Ouvidoria</a>
 
     </nav>
 
@@ -397,7 +398,7 @@
                     <textarea id="observacoes" placeholder="Observações (opcional)"></textarea>
                 </div>
 
-                <button type="submit"><i class="fab fa-whatsapp"></i> Enviar</button>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
             </form>
         </section>
 
@@ -425,7 +426,39 @@
             </div>
         </section>
 
+        <section id="ouvidoria">
+            <h2>Ouvidoria</h2>
+            <p>Sua opinião é muito importante para nós! Envie sua sugestão, elogio ou reclamação e nos ajude a melhorar
+                cada vez mais.</p>
+            <br>
 
+            <form action="https://formspree.io/f/mjkeoall" method="POST" id="form-ouvidoria">
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nome" placeholder="Seu nome (opcional)" />
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Seu e-mail (opcional)" />
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-comment"></i>/
+                    <select name="tipo" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao-negativa">Reclamação</option>
+
+                    </select>
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-pencil-alt"></i>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+            <div id="mensagem-ouvidoria" style="display:none; color:green; margin-top:10px;"></div>
+        </section>
 
     </main>
 
@@ -443,31 +476,38 @@
     </iframe>
 
     <footer id="contato">
-    <div class="coluna">
-        <h4>Contato</h4>
-        <p>📍 Endereço: Av. Índico, 155 - Jardim do Mar - São Bernardo - SP</p>
+        <div class="coluna">
+            <h4>Contato</h4>
+        
+            <p>📍 Endereço: Av. Índico, 155 - Jardim do Mar - São Bernardo - SP</p>
 
-        <p>📞 Telefone: <a href="tel:+551141250126">(11) 4125-0126</a></p>
-        <p>📞 Telefone: <a href="tel:+551141254492">(11) 4125-4492</a></p>
-        <p>📞 Telefone: <a href="tel:+551141237454">(11) 4123-7454</a></p>
-        <p>📞 Telefone: <a href="tel:+551141211008">(11) 4121-1008</a></p>
+            <div class="redes-sociais">
+                <a href="https://instagram.com/indicomedicina" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
 
-        <p>📱 WhatsApp: 
-            <a href="https://wa.me/5511932614762" target="_blank">(11) 93261-4762</a>
-        </p>
+            <p>📞 Telefone: <a href="tel:+551141250126">(11) 4125-0126</a></p>
+            <p>📞 Telefone: <a href="tel:+551141254492">(11) 4125-4492</a></p>
+            <p>📞 Telefone: <a href="tel:+551141237454">(11) 4123-7454</a></p>
+            <p>📞 Telefone: <a href="tel:+551141211008">(11) 4121-1008</a></p>
 
-        <p>✉️ E-mail: 
-            <a href="mailto:indicomedicina@gmail.com">indicomedicina@gmail.com</a>
-        </p>
-        <p>✉️ E-mail: 
-            <a href="mailto:indicomedicina.recepcao@gmail.com">indicomedicina.recepcao@gmail.com</a>
-        </p>
-    </div>
+            <p>📱 WhatsApp:
+                <a href="https://wa.me/5511932614762" target="_blank">(11) 93261-4762</a>
+            </p>
 
-    <div>
-        &copy; 2025 Clínica Índico Medicina. Todos os direitos reservados.
-    </div>
-</footer>
+            <p>✉️ E-mail:
+                <a href="mailto:indicomedicina@gmail.com">indicomedicina@gmail.com</a>
+            </p>
+            <p>✉️ E-mail:
+                <a href="mailto:indicomedicina.recepcao@gmail.com">indicomedicina.recepcao@gmail.com</a>
+            </p>
+        </div>
+
+        <div>
+            &copy; 2025 Clínica Índico Medicina. Todos os direitos reservados.
+        </div>
+    </footer>
 
 
 
