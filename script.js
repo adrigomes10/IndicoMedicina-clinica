@@ -100,3 +100,61 @@ botoesFiltro.forEach(botao => {
 }
 
 
+const imagens = document.querySelectorAll('.galeria-imagens img');
+const lightbox = document.getElementById('lightbox');
+const imgLightbox = document.getElementById('imagem-lightbox');
+const btnFechar = document.getElementById('fechar-lightbox');
+const btnAnterior = document.getElementById('anterior-lightbox');
+const btnProximo = document.getElementById('proximo-lightbox');
+
+let indiceAtual = 0;
+
+imagens.forEach((img, idx) => {
+    img.addEventListener('click', () => {
+        indiceAtual = idx;
+        mostrarImagem(indiceAtual);
+        lightbox.style.display = 'flex';
+    });
+});
+
+let zoomExtra = false;
+
+imgLightbox.addEventListener('dblclick', function() {
+    zoomExtra = !zoomExtra;
+    if (zoomExtra) {
+        imgLightbox.style.transform = 'scale(1.7)';
+        imgLightbox.style.transition = 'transform 0.4s';
+    } else {
+        imgLightbox.style.transform = 'scale(1)';
+        imgLightbox.style.transition = 'transform 0.4s';
+    }
+});
+
+// Sempre que abrir uma nova imagem, reseta o zoom
+function mostrarImagem(indice) {
+    imgLightbox.src = imagens[indice].src;
+    imgLightbox.alt = imagens[indice].alt;
+    imgLightbox.style.transform = 'scale(1)';
+    zoomExtra = false;
+}
+
+btnFechar.onclick = () => {
+    lightbox.style.display = 'none';
+};
+
+btnAnterior.onclick = () => {
+    indiceAtual = (indiceAtual - 1 + imagens.length) % imagens.length;
+    mostrarImagem(indiceAtual);
+};
+
+btnProximo.onclick = () => {
+    indiceAtual = (indiceAtual + 1) % imagens.length;
+    mostrarImagem(indiceAtual);
+};
+
+// Fecha lightbox ao clicar fora da imagem
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});

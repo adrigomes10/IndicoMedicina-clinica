@@ -954,3 +954,88 @@ footer a:hover {
     margin-bottom: 16px;
     letter-spacing: 1.8px;
 }
+
+
+
+/* Galeria de imagens */
+#galeria h2 {
+    color: #073990;
+    font-size: 1.8rem;
+    text-align:left;
+  }
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.galeria-imagens img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#lightbox img {
+    max-width: 80vw;
+    max-height: 70vh;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+#lightbox[style*="display: flex"] img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#fechar-lightbox {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+#anterior-lightbox, #proximo-lightbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2.5rem;
+    color: #073990;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    z-index: 10001;
+}
+
+#anterior-lightbox { left: 48px; }
+#proximo-lightbox { right: 48px; }
