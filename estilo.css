@@ -828,6 +828,8 @@ footer {
  color: #073990;
  font-size: 1.7rem;
  margin-top: 15px;
+ text-align: left;
+
 }
 
 .dicas-frio h4 {
@@ -862,6 +864,7 @@ footer {
  color: #d02520;
  font-size: 1.7rem;
  margin-top: 15px;
+ text-align: left;
 }
 
 .alerta p {
