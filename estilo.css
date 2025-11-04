@@ -1061,3 +1061,27 @@ h3 {
     text-align: center;
 }
 
+/* Estilo das imagens dos cards dos medicos */
+.card-medicos {
+  width: 250px; /* tamanho do card */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  margin: 10px;
+}
+
+.card-medicos:hover {
+  transform: scale(1.03);
+}
+
+.card-medicos img {
+  width: 100px;          /* controla o tamanho da imagem */
+  height: 100px;         /* mantém proporção quadrada */
+  object-fit: cover;     /* evita distorção */
+  border-radius: 50%;    /* deixa a foto redonda */
+  margin-bottom: 10px;   /* espaço entre a imagem e o nome */
+}
+
