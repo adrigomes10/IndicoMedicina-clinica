@@ -1045,7 +1045,7 @@ footer a:hover {
 #anterior-lightbox { left: 48px; }
 #proximo-lightbox { right: 48px; }
 
-/* Titulo outubro rosa */
+/* Titulo noticias */
 #noticias 
 h2 {
     color: #073990;
@@ -1060,6 +1060,23 @@ h3 {
     font-size: 2rem;
     text-align: center;
 }
+
+/*centralizar e ajustar os posts do instagram*/
+.instagram-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os posts */
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    margin: 30px 0;
+}
+
+.instagram-container .post {
+    max-width: 350px; /* largura ideal */
+    width: 100%;
+}
+
+
+
 
 /* Estilo das imagens dos cards dos medicos */
 .card-medicos {
