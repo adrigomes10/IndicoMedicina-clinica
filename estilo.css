@@ -1108,3 +1108,63 @@ h2 {
 
 
 
+/* Modal Styles */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #073990;
+}
+
+.close-btn:hover {
+    color: #ffd700;
+}
+
+.modal h2 {
+    color: #073990;
+    margin-bottom: 15px;
+}
+
+.modal p {
+    margin-bottom: 15px;
+}
+
+.modal button {
+    background-color: #073990;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal button:hover {
+    background-color: #ffd700;
+    color: #073990;
+}

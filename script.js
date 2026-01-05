@@ -158,3 +158,14 @@ lightbox.addEventListener('click', (e) => {
         lightbox.style.display = 'none';
     }
 });
+
+// Modal de Ultrassom
+window.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal-ultrassom');
+    modal.style.display = 'flex'; // Mostra o modal ao carregar a página
+});
+
+function fecharModal() {
+    const modal = document.getElementById('modal-ultrassom');
+    modal.style.display = 'none';
+}
