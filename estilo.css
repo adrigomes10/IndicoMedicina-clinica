@@ -1106,30 +1106,5 @@ h2 {
     background-color: #ffffff; /* opcional, evita fundo transparente */
 }
 
-/* Estilos para a seção de recesso */
-#recesso {
-    background-color: #073990; /* Azul principal */
-    color: #ffffff; /* Texto branco para contraste */
-    padding: 40px 20px;
-    text-align: center;
-    border: 5px solid #ff0000; /* Borda vermelha */
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#recesso h2 {
-    color: #ff0000; /* Título vermelho */
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#recesso p {
-    font-size: 28px;
-    margin: 0;
-}
-
 
 
