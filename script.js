@@ -24,15 +24,17 @@ if (formulario) {
 //funcao que envia o formulário de agendamento via WhatsApp
   function enviarParaWhatsapp() {
     const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
     const telefone = document.getElementById('telefone').value;
-    const especialidade = document.getElementById('especialidades').value;
+    const dataNascimento = document.getElementById('dataNascimento').value;
+    const convenio = document.getElementById('convenio').value;
+    const especialidade = document.getElementById('Especialidades').value;
     const observacoes = document.getElementById('observacoes').value;
 
     const mensagem = `Olá! Meu nome é ${nome}.
 Gostaria de agendar uma consulta para: ${especialidade}.
 Telefone: ${telefone}
-E-mail: ${email}
+Data de Nascimento: ${dataNascimento}
+Convênio: ${convenio}
 Observações: ${observacoes}`;
 
     const url = `https://wa.me/5511932614762?text=${encodeURIComponent(mensagem)}`;
